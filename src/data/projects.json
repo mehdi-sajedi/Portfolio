@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Cinemedia",
+    "cover": "../../public/assets/cinemedia.png",
+    "github": "https://github.com/mehdi-sajedi/cinemedia",
+    "website": "https://cinemedia.netlify.app",
+    "tech": ["React", "TypeScript", "Redux", "Firebase", "SCSS Modules"],
+    "desc": "Multi-page movie gallery utilizing TheMovieDB API to deliver data for movies, TV shows, & actors. Features include sort & filtering, image galleries, & embedded trailers."
+  },
+  {
+    "name": "Goalsetter",
+    "cover": "../../public/assets/goalsetter.png",
+    "github": "https://github.com/mehdi-sajedi/goalsetter",
+    "website": "https://goalsetter.fly.dev",
+    "tech": ["React", "Node.js", "Express", "MongoDB", "Bootstrap"],
+    "desc": "MERN stack project featuring complete CRUD functionality. Login & registration implemented with JSON web tokens & Bcrypt."
+  },
+  {
+    "name": "Worldmark",
+    "cover": "../../public/assets/worldmark.png",
+    "github": "https://github.com/mehdi-sajedi/worldmark",
+    "website": "https://worldmark.netlify.app",
+    "tech": ["React", "JavaScript", "SCSS", "Context API"],
+    "desc": "Fully responsive user interface showcasing information about all the countries of the world. Incorporated capabilities to filter, sort, & search countries. Built with the REST Countries API."
+  },
+  {
+    "name": "Photosnap",
+    "cover": "../../public/assets/photosnap.png",
+    "github": "https://github.com/mehdi-sajedi/photosnap",
+    "website": "https://photosnappp.netlify.app",
+    "tech": ["HTML", "SCSS", "JavaScript"],
+    "desc": "Multi-page site created with semantic HTML, Sass, & vanilla JavaScript."
+  },
+  {
+    "name": "Tip Calculator",
+    "cover": "../../public/assets/tipcalculator.png",
+    "github": "https://github.com/mehdi-sajedi/tip-calculator",
+    "website": "https://tip-calculate.netlify.app",
+    "tech": ["HTML", "SCSS", "JavaScript"],
+    "desc": "Simplistic & user friendly tip calculator with complete keyboard accessibility."
+  },
+  {
+    "name": "Dice Game",
+    "cover": "../../public/assets/dicegame.png",
+    "github": "https://github.com/mehdi-sajedi/dice-game",
+    "website": "https://dice-game-v2.netlify.app",
+    "tech": ["React"],
+    "desc": "Interactive multiplayer dice game built with React."
+  }
+]

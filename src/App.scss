@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --max-width: min(92vw, 1440px);
+  --navy: #192431;
+  --green: #3ed6b1;
+  --white: #e6f1ff;
+  --hero-subheading: #708ba0;
+  --lighest-slate: #ccd6f6;
+  --nav-height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 500px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--navy);
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: max(94vw, 1440px);
+  margin: 0 auto;
+}

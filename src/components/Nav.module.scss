@@ -1,0 +1,30 @@
+@import '../App.scss';
+
+.headerContainer {
+  background-color: var(--navy);
+}
+
+.header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  height: var(--nav-height);
+
+  .links {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    a {
+      padding: 10px;
+      transition: 150ms;
+
+      &:hover {
+        color: dodgerblue;
+      }
+    }
+  }
+}
