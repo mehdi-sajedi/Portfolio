@@ -1,17 +1,16 @@
 @import '../App.scss';
 
-.headerContainer {
-  background-color: var(--navy);
-}
-
 .header {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  background-color: var(--navy);
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
   height: var(--nav-height);
+  font-family: 'Ubuntu', sans-serif;
+  border-bottom: 3px solid var(--green);
+  z-index: 1;
 
   .links {
     display: flex;
@@ -19,11 +18,12 @@
     column-gap: 10px;
 
     a {
+      // color: var(--green);
       padding: 10px;
-      transition: 150ms;
+      transition: var(--ts-effect);
 
       &:hover {
-        color: dodgerblue;
+        color: var(--ts-clr);
       }
     }
   }

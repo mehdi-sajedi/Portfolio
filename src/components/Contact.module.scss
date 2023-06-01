@@ -1,0 +1,37 @@
+@import '../App.scss';
+
+.contactContainer {
+  @include set-bg-and-text-colors(whitesmoke);
+
+  .contact {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      margin-bottom: 30px;
+    }
+
+    .mail {
+      @include set-bg-and-text-colors(whitesmoke);
+      border: 2px solid var(--black);
+      padding: 5px 10px;
+      font-weight: 500;
+      border-radius: 3px;
+      transition: var(--ts-effect);
+
+      &:hover {
+        @include set-bg-and-text-colors(black);
+      }
+    }
+  }
+}

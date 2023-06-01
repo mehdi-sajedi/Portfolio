@@ -1,4 +1,4 @@
-import React from 'react';
+import styles from './Project.module.scss';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
@@ -6,26 +6,32 @@ const Project = ({ name, cover, desc, tech, github, website }) => {
   const imgSrc = cover;
 
   return (
-    <>
-      <img src={imgSrc} alt="Project demo" />
-      <div>
-        <h3>{name}</h3>
-        <div>
-          <p>{desc}</p>
+    <div className={styles.projectContainer}>
+      <div className={styles.project}>
+        <a href={website} target="_blank" className={styles.imageLink}>
+          <img src={imgSrc} alt="Project demo" />
+        </a>
+        <div className={styles.info}>
+          <a href={website} target="_blank" className={styles.name}>
+            <h3>{name}</h3>
+          </a>
+          <ul className={styles.tech}>
+            {tech.map((item) => (
+              <li key={`${name}-${item}`}>{item}</li>
+            ))}
+          </ul>
+          <p className={styles.desc}>{desc}</p>
+          <div className={styles.links}>
+            <a href={github} target="_blank">
+              <AiOutlineGithub />
+            </a>
+            <a href={website} target="_blank">
+              <HiOutlineExternalLink />
+            </a>
+          </div>
         </div>
-        <ul>
-          {tech.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-        <a href={github} target="_blank">
-          <AiOutlineGithub />
-        </a>
-        <a href={website} target="_blank">
-          <HiOutlineExternalLink />
-        </a>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@
     "github": "https://github.com/mehdi-sajedi/photosnap",
     "website": "https://photosnappp.netlify.app",
     "tech": ["HTML", "SCSS", "JavaScript"],
-    "desc": "Multi-page site created with semantic HTML, Sass, & vanilla JavaScript."
+    "desc": "Multi-page site created with semantic HTML, Sass, & vanilla JavaScript. Built utilizing flex & grid layouts with an emphasis in responsive design."
   },
   {
     "name": "Tip Calculator",

@@ -1,15 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@function set-text-color($clr) {
+  @if (lightness($clr) > 50) {
+    @return var(--black);
+  } @else {
+    @return var(--white);
+  }
+}
+
+@mixin set-bg-and-text-colors($clr) {
+  background-color: $clr;
+  color: set-text-color($clr);
+}
 
 :root {
   --max-width: min(92vw, 1440px);
   --navy: #192431;
+  --navy: #1f2935;
   --green: #3ed6b1;
   --white: #e6f1ff;
   --hero-subheading: #708ba0;
   --lighest-slate: #ccd6f6;
-  --nav-height: 100px;
+  --nav-height: 80px;
+  --ts-clr: var(--green);
+  --ts-effect: 250ms ease-in-out;
+  --ts-effect-2: 250ms linear;
+  --black: black;
+  --white: white;
 }
 
 * {
@@ -23,7 +44,7 @@ img {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--navy);
   color: var(--white);
   letter-spacing: 0.5px;
@@ -40,6 +61,7 @@ a {
 
 p {
   line-height: 1.5;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container {

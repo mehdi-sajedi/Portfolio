@@ -3,7 +3,22 @@
 .heroContainer {
   height: calc(100dvh - var(--nav-height));
   background-color: var(--navy);
+  font-family: 'Ubuntu', sans-serif;
   // background-color: #223145;
+  background: linear-gradient(
+    to top left,
+    #353e49 -10%,
+    #313a45 0%,
+    #2c3641 10%,
+    #28323d 20%,
+    #232d39 30%,
+    #1f2935 45%,
+    #1e2834 70%,
+    #1e2733 80%,
+    #1d2732 90%,
+    #1d2631 100%,
+    #1c2530 110%
+  );
 }
 
 .hero {
