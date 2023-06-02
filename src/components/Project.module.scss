@@ -36,18 +36,32 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
 
   &:nth-child(even) .project {
     flex-direction: row-reverse;
+
+    @include media('<tablet') {
+      flex-direction: column;
+    }
   }
 
   .project {
+    max-width: var(--max-width);
     display: flex;
-    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
-    column-gap: 100px;
+    column-gap: clamp(50px, 6vw, 100px);
+
+    @include media('<tablet') {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+    }
 
     .imageLink {
       display: flex;
       box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.3);
       transition: var(--ts-effect-2);
+      width: 100%;
+      border-radius: 2px;
 
       &:hover {
         transform: scale(1.02);
@@ -55,22 +69,31 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
       }
 
       img {
+        width: 100%;
         border-radius: 2px;
       }
     }
 
     .info {
-      width: 700px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      width: 100%;
+      align-items: flex-start;
 
       .name {
         font-size: 40px;
         letter-spacing: -2px;
         margin-bottom: 10px;
         font-weight: 700;
-        align-self: flex-start;
+
+        @include media('<desktop') {
+          font-size: 32px;
+        }
+
+        @include media('<phone') {
+          font-size: 28px;
+          letter-spacing: -1px;
+        }
       }
 
       .tech {
@@ -88,17 +111,22 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
       }
 
       .desc {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
 
       .links {
         display: flex;
         column-gap: 16px;
-        margin-top: 10px;
 
         a {
-          font-size: 30px;
+          font-size: 34px;
           transition: var(--ts-effect);
+          // display: flex;
+          // padding: 5px;
+
+          @include media('<tablet') {
+            font-size: 40px;
+          }
 
           &:hover {
             opacity: 0.6;
