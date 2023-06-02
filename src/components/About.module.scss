@@ -21,7 +21,7 @@
     text-align: center;
 
     .heading {
-      font-size: 60px;
+      @include section-heading;
       margin-bottom: 20px;
     }
 
@@ -43,16 +43,14 @@
         column-gap: 200px;
         font-weight: 600;
         font-size: 12px;
-        // letter-spacing: 0;
-        // font-family: 'Ubuntu';
+        letter-spacing: 0;
 
         li {
           justify-self: flex-start;
           border: 2px solid black;
-          border-radius: 3px;
+          border-radius: 6px;
           padding: 3px;
           min-width: 100px;
-          letter-spacing: 0;
         }
       }
     }

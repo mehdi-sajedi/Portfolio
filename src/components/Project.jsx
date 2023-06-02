@@ -2,7 +2,7 @@ import styles from './Project.module.scss';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
-const Project = ({ name, cover, desc, tech, github, website }) => {
+const Project = ({ name, cover, desc, tech, github, website, idx }) => {
   const imgSrc = cover;
 
   return (
@@ -13,7 +13,10 @@ const Project = ({ name, cover, desc, tech, github, website }) => {
         </a>
         <div className={styles.info}>
           <a href={website} target="_blank" className={styles.name}>
-            <h3>{name}</h3>
+            <h3>
+              {idx + 1}. {''}
+              {name}
+            </h3>
           </a>
           <ul className={styles.tech}>
             {tech.map((item) => (

@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  flex-direction: column;
+  border-top: 5px solid #fac6bf;
+
+  .links {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 10px;
+
+    a {
+      font-size: 30px;
+    }
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    i {
+      display: flex;
+    }
+  }
+}

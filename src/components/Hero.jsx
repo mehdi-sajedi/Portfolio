@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
           <a
             className={styles.link}
-            href="https://www.github.com"
+            href="https://www.github.com/mehdi-sajedi"
             target="_blank"
           >
             Check out my GitHub

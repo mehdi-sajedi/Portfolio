@@ -1,5 +1,5 @@
 import styles from './Nav.module.scss';
-import Logo from './Logo';
+import Logo from '../components/utilities/Logo';
 
 const Nav = () => {
   return (

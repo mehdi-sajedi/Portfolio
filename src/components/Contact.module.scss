@@ -13,7 +13,7 @@
     align-items: center;
 
     .heading {
-      font-size: 48px;
+      @include section-heading;
       margin-bottom: 10px;
     }
 
@@ -24,7 +24,7 @@
     .mail {
       @include set-bg-and-text-colors(whitesmoke);
       border: 2px solid var(--black);
-      padding: 5px 10px;
+      padding: 8px 20px;
       font-weight: 500;
       border-radius: 3px;
       transition: var(--ts-effect);
