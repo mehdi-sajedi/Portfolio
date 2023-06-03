@@ -1,12 +1,19 @@
 import styles from './About.module.scss';
+import { motion } from 'framer-motion';
 
 // prettier-ignore
 const skills = ['JavaScript', 'TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS', 'SCSS', 'Git', 'Firebase']
 
 const About = () => {
   return (
-    <section id="about" className={styles.aboutContainer}>
-      <div className={styles.about}>
+    <section id='about' className={styles.aboutContainer}>
+      <motion.div
+        className={styles.about}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ margin: '-100px' }}
+      >
         <h1 className={styles.heading}>About Me</h1>
         <p className={styles.bio}>
           Hello! My name is Mehdi and I enjoy building user interfaces on the
@@ -22,7 +29,7 @@ const About = () => {
             })}
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

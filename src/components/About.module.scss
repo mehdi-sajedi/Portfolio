@@ -14,7 +14,7 @@
   .about {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 75px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +27,11 @@
 
     .bio {
       margin-bottom: 20px;
+      max-width: 75%;
+
+      @include media('<tablet') {
+        max-width: 100%;
+      }
     }
 
     .skillSection {

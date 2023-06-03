@@ -87,7 +87,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
         font-weight: 700;
 
         @include media('<desktop') {
-          font-size: 32px;
+          font-size: 34px;
         }
 
         @include media('<phone') {
