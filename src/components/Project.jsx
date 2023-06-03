@@ -10,8 +10,8 @@ const Project = ({ name, cover, desc, tech, github, website, idx }) => {
         className={styles.project}
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ margin: '-75px' }}
+        transition={{ duration: 0.75 }}
+        viewport={{ margin: '-88px' }}
       >
         <a href={website} target='_blank' className={styles.imageLink}>
           <img src={cover} alt='Project demo' />

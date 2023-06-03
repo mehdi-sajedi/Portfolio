@@ -9,10 +9,10 @@ const Projects = () => {
       <div className={styles.headingContainer}>
         <motion.div
           className={styles.heading}
-          initial={{ y: 35, opacity: 0 }}
+          initial={{ y: 25, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ margin: '-75px' }}
+          transition={{ duration: 0.5 }}
+          viewport={{ margin: '-125px' }}
         >
           <h2 className={styles.title}>Projects</h2>
           <h4 className={styles.text}>

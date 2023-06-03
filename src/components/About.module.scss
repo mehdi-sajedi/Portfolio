@@ -1,15 +1,15 @@
 @import '../App.scss';
 
 .aboutContainer {
-  @include set-bg-and-text-colors(whitesmoke);
-  background: linear-gradient(
-    to top left,
-    #c6ebf7 0%,
-    #c2eaf7 25%,
-    #bde8f6 50%,
-    #b0d8e5 75%,
-    #a3c8d4 100%
-  );
+  @include set-bg-and-text-colors(white);
+  // background: linear-gradient(
+  //   to top left,
+  //   #c6ebf7 0%,
+  //   #c2eaf7 25%,
+  //   #bde8f6 50%,
+  //   #b0d8e5 75%,
+  //   #a3c8d4 100%
+  // );
 
   .about {
     max-width: var(--max-width);
@@ -19,15 +19,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    // text-align: justify;
+    // text-justify: inter-word;
 
     .heading {
       @include section-heading;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      border-bottom: 5px solid var(--black);
+      line-height: 1;
     }
 
     .bio {
-      margin-bottom: 20px;
-      max-width: 75%;
+      margin-bottom: 40px;
+      max-width: 76%;
+      line-height: 1.75;
 
       @include media('<tablet') {
         max-width: 100%;
@@ -35,9 +40,14 @@
     }
 
     .skillSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
       .lead {
         font-weight: 600;
-        font-size: 18px;
+        font-size: 22px;
         margin-bottom: 25px;
       }
 

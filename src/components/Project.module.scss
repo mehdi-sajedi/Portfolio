@@ -1,11 +1,11 @@
 @import '../App.scss';
 
 $project1: #2b3239;
-$project2: #daf6f8;
+$project2: #e1ecf7;
 $project3: #b7e7ae;
-$project4: #c7a987;
-$project5: #91c6c8;
-$project6: #fac6bf;
+$project4: #cbaf8e;
+$project5: #94bdc1;
+$project6: #fbcac3;
 
 $project-colors: $project1, $project2, $project3, $project4, $project5,
   $project6;
@@ -81,7 +81,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
       align-items: flex-start;
 
       .name {
-        font-size: 40px;
+        font-size: 38px;
         letter-spacing: -2px;
         margin-bottom: 10px;
         font-weight: 700;

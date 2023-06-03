@@ -16,13 +16,20 @@ const About = () => {
       >
         <h1 className={styles.heading}>About Me</h1>
         <p className={styles.bio}>
-          Hello! My name is Mehdi and I enjoy building user interfaces on the
-          web. My interest in web development was sparked by Harvard's CS50:
-          Introduction to Computer Science course. Messing around with basic
-          HTML & CSS was a lot of fun and intrigued me to learn more.
+          I am a passionate web developer whose programming journey took off
+          after I enrolled in an introductory Python course at San Diego State
+          University. Eager to explore different paths within the field, I
+          sought out Harvard's renowned CS50: Introduction to Computer Science
+          course, where I discovered a great passion for web development. From
+          that point onward, I dedicated myself to self-learning web development
+          by following tutorials, reading online resources, and building
+          projects. This self-driven approach has allowed me to continuously
+          expand my skills and stay up-to-date with the ever-evolving web
+          development landscape. I look forward to continue learning new things and
+          driving forward on this exciting career path!
         </p>
         <div className={styles.skillSection}>
-          <p className={styles.lead}>Developer Skills:</p>
+          <p className={styles.lead}>Developer Skills</p>
           <ul className={styles.skills}>
             {skills.map((s) => {
               return <li key={s}>{s}</li>;
