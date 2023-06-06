@@ -8,8 +8,8 @@ const Contact = () => {
         className={styles.contact}
         initial={{ y: 35, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ margin: '-100px' }}
+        transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
+        viewport={{ margin: '-100px', once: false }}
       >
         <h2 className={styles.heading}>Get In Touch</h2>
         <p className={styles.text}>

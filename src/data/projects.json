@@ -1,7 +1,9 @@
 [
   {
     "name": "Cinemedia",
-    "cover": "../../public/assets/cinemedia.png",
+    "cover": "../../public/assets/cinemedia90.jpg",
+    "coverTablet": "../../public/assets/tablets/cinemedia-tablet.png",
+    "coverPhone": "../../public/assets/phones/cinemedia-phone.png",
     "github": "https://github.com/mehdi-sajedi/cinemedia",
     "website": "https://cinemedia.netlify.app",
     "tech": ["React", "TypeScript", "Redux", "Firebase", "SCSS Modules"],
@@ -10,6 +12,8 @@
   {
     "name": "Goalsetter",
     "cover": "../../public/assets/goalsetter.png",
+    "coverTablet": "../../public/assets/tablets/goalsetter-tablet.png",
+    "coverPhone": "../../public/assets/phones/goalsetter-phone.png",
     "github": "https://github.com/mehdi-sajedi/goalsetter",
     "website": "https://goalsetter.fly.dev",
     "tech": ["React", "Node.js", "Express", "MongoDB", "Bootstrap"],
@@ -18,6 +22,8 @@
   {
     "name": "Worldmark",
     "cover": "../../public/assets/worldmark.png",
+    "coverTablet": "../../public/assets/tablets/worldmark-tablet.png",
+    "coverPhone": "../../public/assets/phones/worldmark-phone.png",
     "github": "https://github.com/mehdi-sajedi/worldmark",
     "website": "https://worldmark.netlify.app",
     "tech": ["React", "JavaScript", "SCSS", "Context API"],
@@ -25,7 +31,9 @@
   },
   {
     "name": "Photosnap",
-    "cover": "../../public/assets/photosnap.png",
+    "cover": "../../public/assets/photosnap90.jpg",
+    "coverTablet": "../../public/assets/tablets/photosnap-tablet.png",
+    "coverPhone": "../../public/assets/phones/photosnap-phone.png",
     "github": "https://github.com/mehdi-sajedi/photosnap",
     "website": "https://photosnappp.netlify.app",
     "tech": ["HTML", "SCSS", "JavaScript"],
@@ -34,6 +42,8 @@
   {
     "name": "Tip Calculator",
     "cover": "../../public/assets/tipcalculator.png",
+    "coverTablet": "../../public/assets/tablets/tipcalculator-tablet.png",
+    "coverPhone": "../../public/assets/phones/tipcalculator-phone.png",
     "github": "https://github.com/mehdi-sajedi/tip-calculator",
     "website": "https://tip-calculate.netlify.app",
     "tech": ["HTML", "SCSS", "JavaScript"],
@@ -42,6 +52,8 @@
   {
     "name": "Dice Game",
     "cover": "../../public/assets/dicegame.png",
+    "coverTablet": "../../public/assets/tablets/dicegame-tablet.png",
+    "coverPhone": "../../public/assets/phones/dicegame-phone.png",
     "github": "https://github.com/mehdi-sajedi/dice-game",
     "website": "https://dice-game-v2.netlify.app",
     "tech": ["React"],

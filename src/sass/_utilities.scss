@@ -1,0 +1,39 @@
+@import './include-media';
+
+@function set-text-color($clr) {
+  @if (lightness($clr) > 50) {
+    @return var(--black);
+  } @else {
+    @return var(--white);
+  }
+}
+
+@mixin set-bg-and-text-colors($clr) {
+  background-color: $clr;
+  color: set-text-color($clr);
+}
+
+@mixin section-heading() {
+  font-size: 60px;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+
+  @include media('<desktop') {
+    font-size: 48px;
+  }
+
+  @include media('<phone') {
+    font-size: 40px;
+  }
+}
+
+@mixin max-width($paddingx: 0) {
+  max-width: min(88vw, 1300px);
+  margin: 0 auto;
+  padding: $paddingx 0;
+
+  @include media('<phone') {
+    max-width: 90vw;
+  }
+}

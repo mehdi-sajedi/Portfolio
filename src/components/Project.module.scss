@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import '../sass/utilities';
 
 $project1: #2b3239;
 $project2: #e1ecf7;
@@ -43,11 +43,10 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
   }
 
   .project {
-    max-width: var(--max-width);
+    @include max-width;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     column-gap: clamp(50px, 6vw, 100px);
 
     @include media('<tablet') {
@@ -57,28 +56,56 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
     }
 
     .imageLink {
-      display: flex;
+      display: none;
+      transition: transform var(--ts-effect-2), box-shadow var(--ts-effect-2);
       box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.3);
-      transition: var(--ts-effect-2);
-      width: 100%;
       border-radius: 2px;
+      // display: flex;
+      // transition: 500ms ease-in-out;
 
-      &:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.35);
+      &.active {
+        display: flex;
+
+        // Desktop
+        &:nth-child(1) {
+          width: 100%;
+        }
+
+        // Tablet
+        &:nth-child(2) {
+          width: 548px;
+
+          @include media('<tablet') {
+            width: 281px;
+          }
+        }
+
+        // Phone
+        &:nth-child(3) {
+          width: 291px;
+
+          @include media('<tablet') {
+            width: 200px;
+          }
+        }
       }
 
       img {
         width: 100%;
         border-radius: 2px;
       }
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.35);
+      }
     }
 
     .info {
       display: flex;
       flex-direction: column;
-      width: 100%;
       align-items: flex-start;
+      width: 100%;
 
       .name {
         font-size: 38px;
@@ -121,8 +148,6 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
         a {
           font-size: 34px;
           transition: var(--ts-effect);
-          // display: flex;
-          // padding: 5px;
 
           @include media('<tablet') {
             font-size: 40px;

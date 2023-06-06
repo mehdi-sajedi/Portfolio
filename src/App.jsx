@@ -1,4 +1,4 @@
-import './App.scss';
+import './sass/App.scss';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';

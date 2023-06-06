@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 20px 0;
   flex-direction: column;
-  border-top: 5px solid #fac6bf;
+  border-top: 5px solid #fbcac3;
   background-color: var(--navy);
 
   .links {
@@ -28,6 +28,7 @@
 
     i {
       display: flex;
+      margin-top: 1px;
     }
   }
 }

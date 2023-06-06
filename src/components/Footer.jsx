@@ -25,10 +25,10 @@ const Footer = () => {
         </li>
       </ul>
       <div className={styles.copy}>
+        <p>Mehdi Sajedi 2023</p>
         <i>
           <BiCopyright />
         </i>
-        <p>Mehdi Sajedi 2023</p>
       </div>
     </footer>
   );

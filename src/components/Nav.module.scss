@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import '../sass/utilities';
 
 .header {
   background-color: var(--navy);
@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
   height: var(--nav-height);
   font-family: 'Ubuntu', sans-serif;
   border-bottom: 3px solid var(--green);
@@ -16,15 +15,20 @@
   .links {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    font-size: 18px;
+    column-gap: 15px;
+
+    @include media('<phone') {
+      font-size: 16px;
+      column-gap: 8px;
+    }
 
     a {
-      // color: var(--green);
       padding: 10px;
       transition: var(--ts-effect);
 
       &:hover {
-        color: var(--ts-clr);
+        color: var(--green);
       }
     }
   }

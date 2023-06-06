@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import '../sass/utilities';
 
 .heroContainer {
   height: calc(100vh - var(--nav-height));
@@ -39,8 +39,7 @@
 }
 
 .hero {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  @include max-width();
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -81,7 +80,6 @@
       font-size: 48px;
 
       @include media('<tablet') {
-        font-size: 48px;
         font-size: 40px;
       }
       @include media('<phone') {

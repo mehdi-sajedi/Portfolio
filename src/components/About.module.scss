@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import '../sass/utilities';
 
 .aboutContainer {
   @include set-bg-and-text-colors(white);
@@ -12,9 +12,7 @@
   // );
 
   .about {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 75px 0;
+    @include max-width(90px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +30,7 @@
     .bio {
       margin-bottom: 40px;
       max-width: 76%;
+      max-width: 115ch;
       line-height: 1.75;
 
       @include media('<tablet') {
@@ -54,26 +53,28 @@
       .skills {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        row-gap: 6px;
-        gap: 10px;
-        font-weight: 600;
-        font-size: 12px;
+        gap: 12px;
+        font-weight: 500;
+        font-size: 14px;
         letter-spacing: 0;
 
-        @include media('<tablet') {
+        @include media('<900px') {
           grid-template-columns: repeat(4, 1fr);
         }
 
-        @include media('<phone') {
+        @include media('<615px') {
           grid-template-columns: repeat(3, 1fr);
+        }
+        @include media('<phone') {
+          grid-template-columns: repeat(2, 1fr);
         }
 
         li {
           justify-self: flex-start;
           border: 2px solid var(--black);
-          border-radius: 6px;
-          padding: 3px;
-          min-width: 100px;
+          border-radius: 5px;
+          padding: 5px;
+          min-width: 120px;
         }
       }
     }

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import './utilities';
+
+:root {
+  --black: #111;
+  --white: #fff;
+  --navy: #1f2935;
+  --green: #3ed6b1;
+  --hero-subheading: #708ba0;
+  --nav-height: 80px;
+  --ts-effect: 250ms ease-in-out;
+  --ts-effect-2: 250ms linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+p {
+  line-height: 1.5;
+  font-family: 'Ubuntu', sans-serif;
+}

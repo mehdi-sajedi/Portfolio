@@ -1,13 +1,11 @@
-@import '../App.scss';
+@import '../sass/utilities';
 
 .contactContainer {
   @include set-bg-and-text-colors(whitesmoke);
   position: relative;
 
   .contact {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 75px 0;
+    @include max-width(75px);
     display: flex;
     flex-direction: column;
     justify-content: center;
