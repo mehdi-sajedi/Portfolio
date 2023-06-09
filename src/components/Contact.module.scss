@@ -34,4 +34,31 @@
       }
     }
   }
+
+  .scrollToTop {
+    position: absolute;
+    cursor: pointer;
+    color: var(--black);
+    bottom: 5px;
+    right: 5px;
+    padding: 15px;
+
+    &:hover {
+      animation: bounce 425ms ease-in-out infinite alternate;
+    }
+
+    i {
+      font-size: 25px;
+      display: flex;
+      border-radius: 50px;
+      padding: 6px;
+      background-color: #fbcac3;
+    }
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-4px);
+  }
 }

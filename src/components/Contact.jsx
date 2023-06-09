@@ -1,5 +1,7 @@
 import styles from './Contact.module.scss';
 import { motion } from 'framer-motion';
+import { BiUpArrowAlt } from 'react-icons/bi';
+import { Link } from 'react-scroll';
 
 const Contact = () => {
   return (
@@ -19,6 +21,17 @@ const Contact = () => {
           Say Hello
         </a>
       </motion.div>
+      <Link
+        to='header'
+        href='#header'
+        smooth='easeInOutCubic'
+        duration={1800}
+        className={styles.scrollToTop}
+      >
+        <i>
+          <BiUpArrowAlt />
+        </i>
+      </Link>
     </section>
   );
 };

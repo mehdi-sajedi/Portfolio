@@ -6,7 +6,7 @@ const easeAnimation = 'easeInOutCubic';
 
 const Nav = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id='header'>
       <a href=''>
         <Logo />
       </a>
@@ -37,7 +37,7 @@ const Nav = () => {
               href='#contact'
               to='contact'
               smooth={easeAnimation}
-              duration={2000}
+              duration={1800}
               offset={-200}
             >
               Contact
