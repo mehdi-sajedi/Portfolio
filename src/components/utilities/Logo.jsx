@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../sass/_utilities.scss';
-import LogoSvg from './Logo.svg';
 
 const Logo = () => (
   <div
@@ -11,7 +10,7 @@ const Logo = () => (
       width: '40px',
     }}
   >
-    <img src={LogoSvg} />
+    <img src='./Logo.svg' />
   </div>
 );
 

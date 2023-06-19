@@ -19,7 +19,7 @@ const Projects = () => {
           initial={{ y: 25, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-          viewport={{ margin: '-125px', once: false }}
+          viewport={{ margin: '-125px', once: true }}
         >
           <h2 className={styles.title}>Projects</h2>
           <h4 className={styles.text}>

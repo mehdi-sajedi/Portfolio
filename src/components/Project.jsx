@@ -22,7 +22,7 @@ const Project = ({
         initial={{ x: 125, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-        viewport={{ margin: '-88px', once: false }}
+        viewport={{ margin: '-88px', once: true }}
       >
         <a
           href={website}

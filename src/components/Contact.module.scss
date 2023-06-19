@@ -3,6 +3,7 @@
 .contactContainer {
   @include set-bg-and-text-colors(whitesmoke);
   position: relative;
+  padding-top: 100px;
 
   .contact {
     @include max-width(75px);
