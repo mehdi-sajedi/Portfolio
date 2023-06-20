@@ -10,7 +10,7 @@ const Logo = () => (
       width: '40px',
     }}
   >
-    <img src='./Logo.svg' />
+    <img src='./logo.svg' />
   </div>
 );
 

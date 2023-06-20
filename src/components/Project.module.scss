@@ -60,8 +60,6 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
       transition: transform var(--ts-effect-2), box-shadow var(--ts-effect-2);
       box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.3);
       border-radius: 2px;
-      // display: flex;
-      // transition: 500ms ease-in-out;
 
       &.active {
         display: flex;

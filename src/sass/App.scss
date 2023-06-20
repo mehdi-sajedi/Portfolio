@@ -42,3 +42,11 @@ p {
   line-height: 1.5;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.navHeroContainer {
+  height: 100vh;
+  background: url('./polygon-grid.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

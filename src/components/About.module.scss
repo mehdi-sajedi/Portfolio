@@ -2,14 +2,6 @@
 
 .aboutContainer {
   @include set-bg-and-text-colors(white);
-  // background: linear-gradient(
-  //   to top left,
-  //   #c6ebf7 0%,
-  //   #c2eaf7 25%,
-  //   #bde8f6 50%,
-  //   #b0d8e5 75%,
-  //   #a3c8d4 100%
-  // );
 
   .about {
     @include max-width(90px);
@@ -23,8 +15,6 @@
     .heading {
       @include section-heading;
       margin-bottom: 40px;
-      border-bottom: 5px solid var(--black);
-      line-height: 1;
     }
 
     .bio {

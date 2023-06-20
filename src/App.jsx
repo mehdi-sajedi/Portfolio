@@ -9,9 +9,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main style={{ display: 'flex', flexDirection: 'column' }}>
-      <Nav />
-      <Hero />
+    <main>
+      <div className='navHeroContainer'>
+        <Nav />
+        <Hero />
+      </div>
       <About />
       <Projects />
       {/* <Wave /> */}
