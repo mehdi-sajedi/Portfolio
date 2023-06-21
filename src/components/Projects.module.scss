@@ -2,10 +2,11 @@
 
 .projectsSection {
   position: relative;
+  $light-blue: #99bbc7;
 
   .headingContainer {
     background-color: var(--navy);
-    border-bottom: 5px solid #99bbc7;
+    border-bottom: 5px solid $light-blue;
   }
 
   .heading {
@@ -18,7 +19,7 @@
     .title {
       @include section-heading;
       margin-bottom: 15px;
-      border-bottom: 5px solid #99bbc7;
+      border-bottom: 5px solid $light-blue;
     }
 
     .text {
@@ -27,7 +28,7 @@
     }
 
     .demoImageButtons {
-      background-color: #99bbc7;
+      background-color: $light-blue;
       border-radius: 3px;
       margin-top: 25px;
       padding: 10px 15px;
@@ -43,12 +44,12 @@
         display: none;
 
         &:checked + label {
-          @include set-bg-and-text-colors(darken(#99bbc7, 35%));
+          @include set-bg-and-text-colors(darken($light-blue, 35%));
         }
       }
 
       label {
-        color: set-text-color(#99bbc7);
+        color: set-text-color($light-blue);
         cursor: pointer;
         padding: 6px 22px;
         border-radius: 3px;
@@ -56,7 +57,7 @@
         transition: 350ms ease-in-out;
 
         &:hover {
-          background-color: darken(#99bbc7, 10%);
+          background-color: darken($light-blue, 10%);
         }
       }
     }

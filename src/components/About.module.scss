@@ -71,9 +71,8 @@
         }
 
         li {
-          justify-self: flex-start;
-          border: 1px solid var(--black);
-          border-radius: 2px;
+          box-shadow: 0 0 4px -1px rgba(33, 56, 84, 0.42);
+          border-radius: 3px;
           padding: 5px;
           min-width: 120px;
           background-color: var(--white);

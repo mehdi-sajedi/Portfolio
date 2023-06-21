@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: var(--nav-height);
     margin-bottom: calc(var(--nav-height) + 8svh);
 
     @include media('<phone') {
