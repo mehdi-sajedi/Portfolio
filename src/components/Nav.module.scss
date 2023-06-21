@@ -12,9 +12,21 @@
     @include max-width;
   }
 
+  @include media('<phone') {
+    height: 70px;
+  }
+
   .logoLink {
     display: flex;
     width: 28px;
+
+    @include media('<tablet') {
+      width: 25px;
+    }
+
+    @include media('<phone') {
+      width: 22px;
+    }
 
     img {
       width: 100%;

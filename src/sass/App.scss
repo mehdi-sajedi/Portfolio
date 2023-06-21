@@ -10,6 +10,8 @@
   --nav-height: 80px;
   --ts-effect: 250ms ease-in-out;
   --ts-effect-2: 250ms linear;
+
+ 
 }
 
 * {
@@ -45,7 +47,7 @@ p {
 }
 
 .navHeroContainer {
-  height: 100vh;
+  height: 100svh;
   background: url('/polygon-grid.svg');
   background-repeat: no-repeat;
   background-position: center center;
