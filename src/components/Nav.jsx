@@ -1,5 +1,4 @@
 import styles from './Nav.module.scss';
-import Logo from '../components/utilities/Logo';
 import { Link } from 'react-scroll';
 
 const easeAnimation = 'easeInOutCubic';
@@ -7,8 +6,8 @@ const easeAnimation = 'easeInOutCubic';
 const Nav = () => {
   return (
     <header className={styles.header} id='header'>
-      <a href=''>
-        <Logo />
+      <a href='' className={styles.logoLink}>
+        <img src='./logo.svg' />
       </a>
       <nav>
         <ul className={styles.links}>

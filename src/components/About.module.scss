@@ -1,58 +1,69 @@
 @import '../sass/utilities';
 
 .aboutContainer {
-  @include set-bg-and-text-colors(white);
+  // @include set-bg-and-text-colors(#e1ecf7);
+  // @include set-bg-and-text-colors(#e7f0f9);
+  @include set-bg-and-text-colors(#ebf2f8);
 
   .about {
-    @include max-width(90px);
+    @include max-width(80px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    // text-align: justify;
-    // text-justify: inter-word;
+    align-items: flex-start;
+    column-gap: 100px;
+
+    @include media('<tablet') {
+      flex-direction: column;
+      padding: 65px 0;
+    }
 
     .heading {
-      @include section-heading;
-      margin-bottom: 40px;
+      font-family: 'Geologica';
+      font-size: 42px;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
     }
 
     .bio {
-      margin-bottom: 40px;
-      max-width: 76%;
-      max-width: 115ch;
       line-height: 1.75;
+      text-align: justify;
 
       @include media('<tablet') {
-        max-width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
       }
     }
 
     .skillSection {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       text-align: center;
 
       .lead {
-        font-weight: 600;
         font-size: 22px;
-        margin-bottom: 25px;
+        letter-spacing: 0;
+        margin-bottom: 40px;
+
+        @include media('<tablet') {
+          margin-bottom: 25px;
+        }
       }
 
       .skills {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 12px;
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0;
 
-        @include media('<900px') {
+        @include media('<1220px') {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include media('<tablet') {
           grid-template-columns: repeat(4, 1fr);
         }
-
-        @include media('<615px') {
+        @include media('<650px') {
           grid-template-columns: repeat(3, 1fr);
         }
         @include media('<phone') {
@@ -61,10 +72,11 @@
 
         li {
           justify-self: flex-start;
-          border: 2px solid var(--black);
-          border-radius: 5px;
+          border: 1px solid var(--black);
+          border-radius: 2px;
           padding: 5px;
           min-width: 120px;
+          background-color: var(--white);
         }
       }
     }
