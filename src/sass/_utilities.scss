@@ -1,7 +1,7 @@
 @import './include-media';
 
 @function set-text-color($clr) {
-  @if (lightness($clr) > 50) {
+  @if (lightness($clr) > 53) {
     @return var(--black);
   } @else {
     @return var(--white);

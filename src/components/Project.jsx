@@ -15,6 +15,12 @@ const Project = ({
   idx,
   demoImageType,
 }) => {
+  const screenSizes = [
+    [cover, 'desktop'],
+    [coverTablet, 'tablet'],
+    [coverPhone, 'phone'],
+  ];
+
   return (
     <div className={styles.projectContainer}>
       <motion.div
@@ -24,34 +30,19 @@ const Project = ({
         transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
         viewport={{ margin: '-88px', once: true }}
       >
-        <a
-          href={website}
-          target='_blank'
-          className={` ${styles.imageLink} ${
-            demoImageType === 'desktop' ? styles.active : ''
-          } `}
-        >
-          <img src={cover} alt='Project demo' />
-        </a>
-        <a
-          href={website}
-          target='_blank'
-          className={` ${styles.imageLink} ${
-            demoImageType === 'tablet' ? styles.active : ''
-          } `}
-        >
-          <img src={coverTablet} alt='Project demo' />
-        </a>
-        <a
-          href={website}
-          target='_blank'
-          className={` ${styles.imageLink} ${
-            demoImageType === 'phone' ? styles.active : ''
-          } `}
-        >
-          <img src={coverPhone} alt='Project demo' />
-        </a>
-
+        {screenSizes.map(([imagePath, screen]) => {
+          return (
+            <a
+              href={website}
+              target='_blank'
+              className={` ${styles.imageLink} ${
+                demoImageType === screen ? styles.active : ''
+              } `}
+            >
+              <img src={imagePath} alt='Project demo' />
+            </a>
+          );
+        })}
         <div className={styles.info}>
           <a href={website} target='_blank' className={styles.name}>
             <h3>
