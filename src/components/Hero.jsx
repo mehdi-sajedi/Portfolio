@@ -1,5 +1,7 @@
 import styles from './Hero.module.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 const Hero = () => {
   return (
@@ -17,10 +19,6 @@ const Hero = () => {
             A Frontend Developer from {''}
             <span>San Diego</span>
           </h2>
-          {/* <p className={styles.description}>
-            I'm a Web Developer from San Diego, CA. I graduated from San Diego
-            State University with a Bachelor's degree in Information Systems.
-          </p> */}
           <a
             className={styles.link}
             href='https://www.github.com/mehdi-sajedi'
@@ -30,6 +28,17 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
+      <Link
+        to='about'
+        href='#about'
+        smooth='easeInOutCubic'
+        duration={1000}
+        className={styles.scrollToTop}
+      >
+        <i>
+          <MdKeyboardDoubleArrowDown />
+        </i>
+      </Link>
     </section>
   );
 };

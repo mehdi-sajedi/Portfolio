@@ -82,3 +82,36 @@
     }
   }
 }
+
+.scrollToTop {
+  position: absolute;
+  cursor: pointer;
+  color: var(--black);
+  padding: 15px;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+
+  @include media('<phone') {
+    bottom: 0;
+  }
+
+  &:hover {
+    animation: bounce 425ms ease-in-out infinite alternate;
+  }
+
+  i {
+    font-size: 45px;
+    display: flex;
+
+    svg {
+      color: #98aac1;
+    }
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateX(-50%) translateY(-4px);
+  }
+}
