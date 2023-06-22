@@ -33,6 +33,7 @@ const Project = ({
         {screenSizes.map(([imagePath, screen]) => {
           return (
             <a
+              key={screen}
               href={website}
               target='_blank'
               className={` ${styles.imageLink} ${
