@@ -1,10 +1,45 @@
 import styles from './About.module.scss';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 // prettier-ignore
-const skills = ['JavaScript', 'TypeScript', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS', 'SCSS', 'Git', 'Firebase']
+import { BiLogoNodejs, BiLogoRedux, BiLogoFirebase, BiLogoGit, BiLogoReact, BiLogoJavascript, BiLogoTypescript } from 'react-icons/bi';
+import {
+  SiExpress,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+} from 'react-icons/si';
+import { DiMongodb, DiSass } from 'react-icons/di';
+
+// prettier-ignor
+const skills = [
+  ['JavaScript', <BiLogoJavascript />],
+  ['TypeScript', <BiLogoTypescript />],
+  ['React', <BiLogoReact />],
+  ['Redux', <BiLogoRedux />],
+  ['Node.js', <BiLogoNodejs />],
+  ['Express', <SiExpress />],
+  ['MongoDB', <DiMongodb />],
+  ['HTML', <SiHtml5 />],
+  ['CSS', <SiCss3 />],
+  ['SCSS', <DiSass />],
+  ['Git', <BiLogoGit />],
+  ['Firebase', <BiLogoFirebase />],
+];
 
 const About = () => {
+  const [skillsActive, setSkillsActive] = useState([]);
+
+  const onClick = (text) => {
+    if (!skillsActive.includes(text)) {
+      setSkillsActive((prevState) => [...prevState, text]);
+    } else {
+      setSkillsActive((prevState) => prevState.filter((s) => s !== text));
+    }
+  };
+
   return (
     <section id='about' className={styles.aboutContainer}>
       <motion.div
@@ -34,8 +69,17 @@ const About = () => {
         <div className={styles.skillSection}>
           <h3 className={styles.lead}>Developer Skills</h3>
           <ul className={styles.skills}>
-            {skills.map((s) => {
-              return <li key={s}>{s}</li>;
+            {skills.map(([text, logo]) => {
+              return (
+                <li
+                  key={text}
+                  onClick={() => onClick(text)}
+                  className={skillsActive.includes(text) ? styles.active : ''}
+                >
+                  <i className={styles.logo}>{logo}</i>
+                  <span>{text}</span>
+                </li>
+              );
             })}
           </ul>
         </div>

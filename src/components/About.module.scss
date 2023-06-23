@@ -3,6 +3,7 @@
 .aboutContainer {
   // @include set-bg-and-text-colors(#e1ecf7);
   // @include set-bg-and-text-colors(#e7f0f9);
+  // @include set-bg-and-text-colors(#eef4f9);
   @include set-bg-and-text-colors(#ebf2f8);
 
   .about {
@@ -73,9 +74,42 @@
         li {
           box-shadow: 0 0 4px -1px rgba(33, 56, 84, 0.42);
           border-radius: 3px;
-          padding: 5px 0;
-          min-width: 115px;
+          padding: 5px 10px;
+          min-width: 125px;
           background-color: var(--white);
+          display: flex;
+          align-items: center;
+          column-gap: 6px;
+          cursor: pointer;
+          transition: var(--ts-effect);
+          user-select: none;
+
+          $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a,
+            #4db33d, #e34c26, #264de4, #cd6799, #f34f29, #ffa611;
+
+          @for $i from 1 through length($skill-colors) {
+            $clr: nth($skill-colors, $i);
+
+            // &:nth-child(#{$i}):hover {
+              // @include set-bg-and-text-colors($clr);
+              // background-color: rgba($clr, 0.5);
+            // }
+
+            &.active:nth-child(#{$i}) {
+              @include set-bg-and-text-colors($clr);
+            }
+          }
+
+          .logo {
+            display: flex;
+          }
+
+          &:first-of-type,
+          &:nth-of-type(2) {
+            .logo {
+              font-size: 16px;
+            }
+          }
         }
       }
     }
