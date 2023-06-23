@@ -33,7 +33,7 @@ const Hero = () => {
         href='#about'
         smooth='easeInOutCubic'
         duration={1000}
-        className={styles.scrollToTop}
+        className={styles.scrollToBottom}
       >
         <i>
           <MdKeyboardDoubleArrowDown />

@@ -17,23 +17,39 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
   @for $i from 1 through length($project-colors) {
     $clr: nth($project-colors, $i);
 
+    // Set background and text colors
     &:nth-child(#{$i}) {
       @include set-bg-and-text-colors($clr);
     }
 
+    // Color specific box shadows
     &:nth-child(#{$i}) .info .tech li {
       box-shadow: 0 0 4px -1px darken(rgba($clr, 1), 42%);
     }
 
+    // Black/white text switch based on bg color
     &:nth-child(#{$i}) .info .links a {
       color: set-text-color($clr);
+
+      // Color specific hover underline for GitHub/View site
+      &::after {
+        background-color: darken($clr, 25%);
+
+        @if $i == 1 {
+          background-color: var(--white);
+        } @else if $i == 6 {
+          background-color: darken($clr, 18%);
+        }
+      }
     }
 
+    // Black/white project name switch based on bg color
     &:nth-child(#{$i}) .info .name {
       color: set-text-color($clr);
     }
   }
 
+  // Alternate flex direction
   &:nth-child(even) .project {
     flex-direction: row-reverse;
 
@@ -143,15 +159,33 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
         column-gap: 16px;
 
         a {
-          font-size: 34px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
           transition: var(--ts-effect);
+          padding-bottom: 8px;
 
-          @include media('<tablet') {
-            font-size: 40px;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 3px;
+            left: 0;
+            border-radius: 100px;
+            transition: transform 340ms ease-in-out, opacity 340ms ease-in-out;
+            opacity: 0.5;
           }
 
-          &:hover {
-            opacity: 0.6;
+          &:hover::after {
+            transform: scaleX(1);
+            opacity: 1;
+          }
+
+          svg {
+            font-size: 22px;
           }
         }
       }

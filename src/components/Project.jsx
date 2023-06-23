@@ -59,10 +59,10 @@ const Project = ({
           <p className={styles.desc}>{desc}</p>
           <div className={styles.links}>
             <a href={github} target='_blank'>
-              <AiOutlineGithub />
+              <AiOutlineGithub /> GitHub
             </a>
             <a href={website} target='_blank'>
-              <HiOutlineExternalLink />
+              <HiOutlineExternalLink /> View site
             </a>
           </div>
         </div>
