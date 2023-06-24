@@ -76,7 +76,7 @@ const About = () => {
                   onClick={() => onClick(text)}
                   className={skillsActive.includes(text) ? styles.active : ''}
                 >
-                  <i className={styles.logo}>{logo}</i>
+                  <i>{logo}</i>
                   <span>{text}</span>
                 </li>
               );

@@ -1,5 +1,8 @@
 @import '../sass/utilities';
 
+$skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
+  #e34c26, #264de4, #cd6799, #f34f29, #ffa611;
+
 .aboutContainer {
   // @include set-bg-and-text-colors(#e1ecf7);
   // @include set-bg-and-text-colors(#e7f0f9);
@@ -72,41 +75,61 @@
         }
 
         li {
-          box-shadow: 0 0 4px -1px rgba(33, 56, 84, 0.42);
-          border-radius: 3px;
-          padding: 5px 10px;
-          min-width: 125px;
-          background-color: var(--white);
+          position: relative;
           display: flex;
           align-items: center;
           column-gap: 6px;
+          min-width: 125px;
+          border-radius: 3px;
+          padding: 5px 10px;
+          background-color: var(--white);
+          box-shadow: 0 0 4px -1px rgba(33, 56, 84, 0.42);
           cursor: pointer;
-          transition: var(--ts-effect);
           user-select: none;
+          transition: var(--ts-effect);
+          overflow: hidden;
 
-          $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a,
-            #4db33d, #e34c26, #264de4, #cd6799, #f34f29, #ffa611;
+          i,
+          span {
+            z-index: 100;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            top: -3px;
+            left: 0;
+            transform: scaleX(0);
+            border-radius: 3px;
+            transition: transform 350ms ease-in-out,
+              background-color 400ms linear;
+            transform-origin: right;
+          }
 
           @for $i from 1 through length($skill-colors) {
             $clr: nth($skill-colors, $i);
 
-            // &:nth-child(#{$i}):hover {
-              // @include set-bg-and-text-colors($clr);
-              // background-color: rgba($clr, 0.5);
-            // }
-
+            // Switch selector to `&:nth-child(#{$i}):hover` for effect on hover
             &.active:nth-child(#{$i}) {
-              @include set-bg-and-text-colors($clr);
+              color: set-text-color($clr);
+
+              &::after {
+                background-color: $clr;
+                transform: scaleX(1);
+                transform-origin: left;
+              }
             }
           }
 
-          .logo {
+          i {
             display: flex;
           }
 
           &:first-of-type,
           &:nth-of-type(2) {
-            .logo {
+            i {
               font-size: 16px;
             }
           }
