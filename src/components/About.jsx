@@ -4,16 +4,9 @@ import { useState } from 'react';
 
 // prettier-ignore
 import { BiLogoNodejs, BiLogoRedux, BiLogoFirebase, BiLogoGit, BiLogoReact, BiLogoJavascript, BiLogoTypescript } from 'react-icons/bi';
-import {
-  SiExpress,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-} from 'react-icons/si';
+import { SiExpress, SiHtml5, SiCss3 } from 'react-icons/si';
 import { DiMongodb, DiSass } from 'react-icons/di';
 
-// prettier-ignor
 const skills = [
   ['JavaScript', <BiLogoJavascript />],
   ['TypeScript', <BiLogoTypescript />],
@@ -53,7 +46,7 @@ const About = () => {
           <h3 className={styles.heading}>About Me</h3>
           <p className={styles.bio}>
             I am a passionate web developer whose programming journey took off
-            after I enrolled in an introductory Python course at San Diego State
+            after enrolling in an introductory Python course at San Diego State
             University. Intrigued to explore different paths within the field, I
             sought out Harvard's renowned CS50: Introduction to Computer Science
             course, where I discovered a great passion for web development. From

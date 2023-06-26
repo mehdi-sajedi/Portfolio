@@ -33,12 +33,18 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
 
       // Color specific hover underline for GitHub/View site
       &::after {
-        background-color: darken($clr, 25%);
+        background-color: darken($clr, 33%);
 
         @if $i == 1 {
           background-color: var(--white);
+        } @else if $i == 2 {
+          background-color: darken($clr, 25%);
+        } @else if $i == 3 {
+          background-color: darken($clr, 40%);
+        } @else if $i == 4 {
+          background-color: darken($clr, 28%);
         } @else if $i == 6 {
-          background-color: darken($clr, 18%);
+          background-color: darken($clr, 13%);
         }
       }
     }
