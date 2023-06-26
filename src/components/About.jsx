@@ -45,18 +45,16 @@ const About = () => {
         <div>
           <h3 className={styles.heading}>About Me</h3>
           <p className={styles.bio}>
-            I am a passionate web developer whose programming journey took off
-            after enrolling in an introductory Python course at San Diego State
-            University. Intrigued to explore different paths within the field, I
-            sought out Harvard's renowned CS50: Introduction to Computer Science
-            course, where I discovered a great passion for web development. From
-            that point onward, I dedicated myself to self-learning web
-            development by following tutorials, reading online resources, and
-            building projects. This self-driven approach has allowed me to
-            continuously expand my skills and stay up-to-date with the
-            ever-evolving web development landscape. I look forward to continue
-            learning new things and driving forward on this exciting career
-            path!
+            My programming journey took off after enrolling in an introductory
+            Python course at San Diego State University. Coding turned out to be
+            a lot of fun and I was intrigued to explore the various paths within
+            the software engineering field. I discovered web development and
+            dedicated myself to self-learning it by reading online resources,
+            following tutorials, and building projects. This self-driven
+            approach has allowed me to continuously expand my skills and stay
+            up-to-date with the ever-evolving web development landscape. I look
+            forward to taking on new challenges and learning new things on this
+            exciting career path!
           </p>
         </div>
         <div className={styles.skillSection}>
