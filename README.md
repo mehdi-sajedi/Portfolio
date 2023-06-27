@@ -10,6 +10,29 @@
 
 ![demo](https://raw.githubusercontent.com/mehdi-sajedi/Portfolio/main/demo.png)
 
+
+## 🛠 Installation & Setup
+
+1. Install dependencies
+```
+npm install
+```
+2. Start the development server
+```
+npm run dev
+```
+
+## 🚀 Building and Running for Production
+1. Generate a production build
+```
+npm run build
+```
+
+2. Preview the site as it will appear once deployed
+```
+npm run preview
+```
+
 ## 🎨 Color Reference
 
 | Color      | Hex                                                                |
