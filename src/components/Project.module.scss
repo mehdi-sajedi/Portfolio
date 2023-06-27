@@ -79,7 +79,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
 
     .imageLink {
       display: none;
-      transition: transform var(--ts-effect-2), box-shadow var(--ts-effect-2);
+      transition: transform var(--ts-effect-l), box-shadow var(--ts-effect-l);
       box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.3);
       border-radius: 2px;
 
@@ -169,7 +169,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
           display: flex;
           align-items: center;
           column-gap: 5px;
-          transition: var(--ts-effect);
+          transition: var(--ts-effect-eio);
           padding-bottom: 8px;
 
           &::after {

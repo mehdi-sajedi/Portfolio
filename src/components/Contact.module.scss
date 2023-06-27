@@ -6,7 +6,7 @@
   padding-top: 100px;
 
   @include media('<tablet') {
-    padding-top: 75px
+    padding-top: 75px;
   }
 
   .contact {
@@ -32,7 +32,7 @@
       padding: 8px 20px;
       font-weight: 500;
       border-radius: 3px;
-      transition: var(--ts-effect);
+      transition: var(--ts-effect-eio);
 
       &:hover {
         @include set-bg-and-text-colors(black);
