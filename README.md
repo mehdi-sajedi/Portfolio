@@ -1,11 +1,11 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/mehdi-sajedi/portfolio/main/public/Logo.svg" width="50" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/mehdi-sajedi/portfolio/main/public/Logo.svg" width="50" height='60' />
 </div>
 
 <h1 align='center'>Mehdi Sajedi's Portfolio Website</h1>
 
 <p>
-  <a href='https://mehdisajedii.netlify.app'>mehdisajedii.netlify.app</a>
+  <a href='https://mehdisajedi.com'>mehdisajedi.com</a>
 </p>
 
 ![demo](https://raw.githubusercontent.com/mehdi-sajedi/Portfolio/main/demo.png)
