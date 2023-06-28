@@ -43,7 +43,12 @@ p {
   font-family: 'Ubuntu', sans-serif;
 }
 
+button {
+  color: var(--black);
+}
+
 .headerHeroContainer {
+  height: 100vh;
   height: 100svh;
   background: url('/polygon-grid.svg');
   background-repeat: no-repeat;

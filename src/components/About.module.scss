@@ -63,8 +63,8 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
-        font-weight: 500;
         font-size: 14px;
+        font-weight: 500;
         letter-spacing: 0;
 
         @include media('<1220px') {
@@ -80,25 +80,25 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
           grid-template-columns: repeat(2, 1fr);
         }
 
-        li {
+        button {
           position: relative;
           display: flex;
           align-items: center;
           column-gap: 6px;
           min-width: 120px;
-          border-radius: 3px;
-          padding: 7px 10px;
+          font-family: 'Ubuntu';
+          font-size: 14px;
+          font-weight: 500;
           background-color: var(--white);
           box-shadow: 0 0 4px -1px rgba(33, 56, 84, 0.42);
+          border-radius: 3px;
+          padding: 7px 10px;
           cursor: pointer;
           user-select: none;
-          transition: var(--ts-effect-eio);
+          border: none;
           overflow: hidden;
-
-          i,
-          span {
-            z-index: 100;
-          }
+          transition: background-color var(--ts-effect-eio),
+            color var(--ts-effect-eio);
 
           &::after {
             content: '';
@@ -114,11 +114,26 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
             transform-origin: right;
           }
 
+          &:focus-visible {
+            outline: 2px solid var(--green);
+          }
+
+          i,
+          span {
+            z-index: 2;
+          }
+
+          i {
+            display: flex;
+            font-size: 16px;
+          }
+        }
+
+        li {
           @for $i from 1 through length($skill-colors) {
             $clr: nth($skill-colors, $i);
 
-            // Switch selector to `&:nth-child(#{$i}):hover` for effect on hover
-            &.active:nth-child(#{$i}) {
+            &.active:nth-child(#{$i}) button {
               color: set-best-contrast($clr);
 
               &::after {
@@ -126,17 +141,6 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
                 transform: scaleX(1);
                 transform-origin: left;
               }
-            }
-          }
-
-          i {
-            display: flex;
-          }
-
-          &:first-of-type,
-          &:nth-of-type(2) {
-            i {
-              font-size: 16px;
             }
           }
         }

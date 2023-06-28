@@ -64,11 +64,12 @@ const About = () => {
               return (
                 <li
                   key={text}
-                  onClick={() => onClick(text)}
                   className={skillsActive.includes(text) ? styles.active : ''}
                 >
-                  <i>{logo}</i>
-                  <span>{text}</span>
+                  <button onClick={() => onClick(text)}>
+                    <i>{logo}</i>
+                    <span>{text}</span>
+                  </button>
                 </li>
               );
             })}
