@@ -1,9 +1,9 @@
-import styles from './Nav.module.scss';
+import styles from './Header.module.scss';
 import { Link } from 'react-scroll';
 
 const easeAnimation = 'easeInOutCubic';
 
-const Nav = () => {
+const Header = () => {
   return (
     <header className={styles.header} id='header'>
       <a href='' className={styles.logoLink}>
@@ -48,4 +48,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;

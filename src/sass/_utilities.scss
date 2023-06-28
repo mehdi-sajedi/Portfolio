@@ -1,6 +1,6 @@
 @import './include-media';
 
-@function set-text-color($clr) {
+@function set-best-contrast($clr) {
   @if (lightness($clr) > 53) {
     @return var(--black);
   } @else {
@@ -10,7 +10,7 @@
 
 @mixin set-bg-and-text-colors($clr) {
   background-color: $clr;
-  color: set-text-color($clr);
+  color: set-best-contrast($clr);
 }
 
 @mixin section-heading() {

@@ -43,7 +43,7 @@ const About = () => {
         viewport={{ margin: '-100px', once: true }}
       >
         <div>
-          <h3 className={styles.heading}>About Me</h3>
+          <h2 className={styles.heading}>About Me</h2>
           <p className={styles.bio}>
             My programming journey took off after enrolling in an introductory
             Python course at San Diego State University. Coding turned out to be
@@ -57,9 +57,9 @@ const About = () => {
             exciting career path!
           </p>
         </div>
-        <div className={styles.skillSection}>
+        <div className={styles.devSkills}>
           <h3 className={styles.lead}>Developer Skills</h3>
-          <ul className={styles.skills}>
+          <ul className={styles.skillsList}>
             {skills.map(([text, logo]) => {
               return (
                 <li

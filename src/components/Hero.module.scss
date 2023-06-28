@@ -28,16 +28,18 @@
       font-weight: 300;
       color: var(--green);
       margin-bottom: 20px;
-      letter-spacing: 1.3px;
+      letter-spacing: 1px;
     }
 
     .name {
       font-size: 80px;
       color: var(--lightest-slate);
       margin-bottom: 10px;
+      letter-spacing: -2px;
 
       @include media('<tablet') {
         font-size: 60px;
+        letter-spacing: -1px;
       }
       @include media('<phone') {
         font-size: 40px;
@@ -49,6 +51,7 @@
       color: #708ba0;
       margin-bottom: 30px;
       font-size: 48px;
+      letter-spacing: 0;
 
       @include media('<tablet') {
         font-size: 40px;

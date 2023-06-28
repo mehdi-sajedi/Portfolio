@@ -22,9 +22,9 @@ const Projects = () => {
           viewport={{ margin: '-125px', once: true }}
         >
           <h2 className={styles.title}>Projects</h2>
-          <h4 className={styles.text}>
+          <h3 className={styles.text}>
             A collection of my featured technical projects
-          </h4>
+          </h3>
           <div className={styles.demoImageButtons}>
             <input
               type='radio'

@@ -1,5 +1,5 @@
 import './sass/App.scss';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <main>
-      <div className='navHeroContainer'>
-        <Nav />
+      <div className='headerHeroContainer'>
+        <Header />
         <Hero />
       </div>
       <About />

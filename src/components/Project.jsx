@@ -45,18 +45,18 @@ const Project = ({
           );
         })}
         <div className={styles.info}>
-          <a href={website} target='_blank' className={styles.name}>
-            <h3>
+          <h4 className={styles.name} >
+            <a href={website} target='_blank' >
               {idx + 1}. {''}
               {name}
-            </h3>
-          </a>
+            </a>
+          </h4>
           <ul className={styles.tech}>
             {tech.map((item) => (
               <li key={`${name}-${item}`}>{item}</li>
             ))}
           </ul>
-          <p className={styles.desc}>{desc}</p>
+          <p className={styles.description}>{desc}</p>
           <div className={styles.links}>
             <a href={github} target='_blank'>
               <AiOutlineGithub /> GitHub

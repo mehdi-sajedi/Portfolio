@@ -11,9 +11,9 @@ const Hero = () => {
           className={styles.heroContent}
           initial={{ opacity: 0, y: 75, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.25 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
         >
-          <h4 className={styles.lead}>Hey, I'm</h4>
+          <p className={styles.lead}>Hey, I'm</p>
           <h1 className={styles.name}>Mehdi Sajedi</h1>
           <h2 className={styles.tagline}>
             A Frontend Developer from {''}
