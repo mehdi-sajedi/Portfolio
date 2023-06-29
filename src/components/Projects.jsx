@@ -4,11 +4,14 @@ import Project from './Project';
 import projectsData from '../data/projects.json';
 import { motion } from 'framer-motion';
 
+const sizes = ['desktop', 'tablet', 'phone'];
+
 const Projects = () => {
   const [demoImageType, setDemoImageType] = useState('desktop');
 
-  const onChange = (e) => {
-    setDemoImageType(e.target.value);
+  const onClick = (e) => {
+    console.log(e.target.dataset.size);
+    setDemoImageType(e.target.dataset.size);
   };
 
   return (
@@ -25,35 +28,21 @@ const Projects = () => {
           <h3 className={styles.text}>
             A collection of my featured technical projects
           </h3>
-          <div className={styles.demoImageButtons}>
-            <input
-              type='radio'
-              id='desktop'
-              value='desktop'
-              radioGroup='demo'
-              onChange={onChange}
-              checked={demoImageType === 'desktop'}
-            />
-            <label htmlFor='desktop'>Desktop</label>
-            <input
-              type='radio'
-              id='tablet'
-              value='tablet'
-              radioGroup='demo'
-              onChange={onChange}
-              checked={demoImageType === 'tablet'}
-            />
-            <label htmlFor='tablet'>Tablet</label>
-            <input
-              type='radio'
-              id='phone'
-              value='phone'
-              radioGroup='demo'
-              onChange={onChange}
-              checked={demoImageType === 'phone'}
-            />
-            <label htmlFor='phone'>Phone</label>
-          </div>
+          <ul className={styles.demoImageButtons}>
+            {sizes.map((s) => {
+              return (
+                <li key={`demo-${s}`}>
+                  <button
+                    data-size={s}
+                    onClick={onClick}
+                    className={demoImageType === s ? styles.active : ''}
+                  >
+                    {s}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
         </motion.div>
       </div>
       <div className={styles.projects}>
