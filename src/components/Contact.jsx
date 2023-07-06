@@ -1,12 +1,19 @@
 import styles from './Contact.module.scss';
+import { useEffect } from 'react';
+import { Link, Events } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { BiUpArrowAlt } from 'react-icons/bi';
-import { Link } from 'react-scroll';
 import Wave from './utilities/Wave';
 
 const Contact = () => {
+  useEffect(() => {
+    Events.scrollEvent.register('end', (_to, element) => {
+      element?.focus();
+    });
+  }, []);
+
   return (
-    <section id='contact' className={styles.contactContainer}>
+    <section id='contact' className={styles.contactContainer} tabIndex={-1}>
       <motion.div
         className={styles.contact}
         initial={{ y: 35, opacity: 0 }}

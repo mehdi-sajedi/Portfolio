@@ -4,6 +4,8 @@
   @include set-bg-and-text-colors(whitesmoke);
   position: relative;
   padding-top: 100px;
+  border: none;
+  outline: none;
 
   @include media('<tablet') {
     padding-top: 75px;

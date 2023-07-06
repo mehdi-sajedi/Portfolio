@@ -84,7 +84,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
 
         // Tablet
         &:nth-child(2) {
-          width: 548px;
+          width: 518px;
 
           @include media('<tablet') {
             width: 281px;
@@ -93,7 +93,7 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
 
         // Phone
         &:nth-child(3) {
-          width: 291px;
+          width: 269px;
 
           @include media('<tablet') {
             width: 200px;

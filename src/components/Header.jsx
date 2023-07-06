@@ -1,11 +1,18 @@
 import styles from './Header.module.scss';
-import { Link } from 'react-scroll';
+import { useEffect } from 'react';
+import { Link, Events } from 'react-scroll';
 
 const easeAnimation = 'easeInOutCubic';
 
 const Header = () => {
+  useEffect(() => {
+    Events.scrollEvent.register('end', (_to, element) => {
+      element?.focus();
+    });
+  }, []);
+
   return (
-    <header className={styles.header} id='header'>
+    <header className={styles.header} id='header' tabindex={-1}>
       <a href='' className={styles.logoLink}>
         <img src='./logo.svg' />
       </a>
@@ -15,6 +22,7 @@ const Header = () => {
             <Link
               href='#about'
               to='about'
+              spy='about'
               smooth={easeAnimation}
               duration={1000}
             >
@@ -25,6 +33,7 @@ const Header = () => {
             <Link
               href='#projects'
               to='projects'
+              // hashSpy={true}
               smooth={easeAnimation}
               duration={1200}
             >
@@ -35,6 +44,7 @@ const Header = () => {
             <Link
               href='#contact'
               to='contact'
+              // hashSpy={true}
               smooth={easeAnimation}
               duration={1800}
               offset={-200}

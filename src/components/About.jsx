@@ -34,7 +34,7 @@ const About = () => {
   };
 
   return (
-    <section id='about' className={styles.aboutContainer}>
+    <section id='about' className={styles.aboutContainer} tabIndex={-1}>
       <motion.div
         className={styles.about}
         initial={{ y: 50, opacity: 0 }}

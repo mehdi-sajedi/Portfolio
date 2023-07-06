@@ -15,7 +15,7 @@ const Projects = () => {
   };
 
   return (
-    <section id='projects' className={styles.projectsSection}>
+    <section id='projects' className={styles.projectsSection} tabIndex={-1}>
       <div className={styles.headingContainer}>
         <motion.div
           className={styles.heading}

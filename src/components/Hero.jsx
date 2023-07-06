@@ -1,9 +1,16 @@
 import styles from './Hero.module.scss';
+import { useEffect } from 'react';
+import { Link, Events } from 'react-scroll';
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 const Hero = () => {
+  useEffect(() => {
+    Events.scrollEvent.register('end', (_to, element) => {
+      element?.focus();
+    });
+  }, []);
+
   return (
     <section className={styles.heroContainer}>
       <div className={styles.hero}>

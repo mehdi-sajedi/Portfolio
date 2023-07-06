@@ -8,6 +8,8 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
   // @include set-bg-and-text-colors(#e7f0f9);
   // @include set-bg-and-text-colors(#eef4f9);
   @include set-bg-and-text-colors(#ebf2f8);
+  border: none;
+  outline: none;
 
   .about {
     @include max-width(80px);
@@ -113,10 +115,6 @@ $skill-colors: #f0db4f, #007acc, #61dbfb, #764abc, #68a063, #3c873a, #4db33d,
             transition: transform 350ms ease-in-out,
               background-color 400ms linear;
             transform-origin: right;
-          }
-
-          &:focus-visible {
-            outline: 2px solid var(--green);
           }
 
           i,
