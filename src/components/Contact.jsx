@@ -1,17 +1,10 @@
 import styles from './Contact.module.scss';
-import { useEffect } from 'react';
-import { Link, Events } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { BiUpArrowAlt } from 'react-icons/bi';
 import Wave from './utilities/Wave';
+import CustomLink from './utilities/CustomLink';
 
 const Contact = () => {
-  useEffect(() => {
-    Events.scrollEvent.register('end', (_to, element) => {
-      element?.focus();
-    });
-  }, []);
-
   return (
     <section id='contact' className={styles.contactContainer} tabIndex={-1}>
       <motion.div
@@ -29,17 +22,11 @@ const Contact = () => {
           Say Hello
         </a>
       </motion.div>
-      <Link
-        to='header'
-        href='#header'
-        smooth='easeInOutCubic'
-        duration={1800}
-        className={styles.scrollToTop}
-      >
+      <CustomLink id='header' duration={1800} className={styles.scrollToTop}>
         <i>
           <BiUpArrowAlt />
         </i>
-      </Link>
+      </CustomLink>
       <Wave />
     </section>
   );

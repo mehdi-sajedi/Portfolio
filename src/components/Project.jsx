@@ -22,7 +22,7 @@ const Project = ({
   ];
 
   return (
-    <div className={styles.projectContainer}>
+    <div className={styles.projectContainer} tabIndex={-1}>
       <motion.div
         className={styles.project}
         initial={{ x: 125, opacity: 0 }}
@@ -45,8 +45,8 @@ const Project = ({
           );
         })}
         <div className={styles.info}>
-          <h4 className={styles.name} >
-            <a href={website} target='_blank' >
+          <h4 className={styles.name}>
+            <a href={website} target='_blank'>
               {idx + 1}. {''}
               {name}
             </a>

@@ -1,56 +1,28 @@
 import styles from './Header.module.scss';
-import { useEffect } from 'react';
-import { Link, Events } from 'react-scroll';
-
-const easeAnimation = 'easeInOutCubic';
+import CustomLink from './utilities/CustomLink';
 
 const Header = () => {
-  useEffect(() => {
-    Events.scrollEvent.register('end', (_to, element) => {
-      element?.focus();
-    });
-  }, []);
-
   return (
-    <header className={styles.header} id='header' tabindex={-1}>
+    <header className={styles.header} id='header' tabIndex={-1}>
       <a href='' className={styles.logoLink}>
         <img src='./logo.svg' />
       </a>
       <nav>
         <ul className={styles.links}>
           <li>
-            <Link
-              href='#about'
-              to='about'
-              spy='about'
-              smooth={easeAnimation}
-              duration={1000}
-            >
+            <CustomLink id='about' duration={1000}>
               About
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link
-              href='#projects'
-              to='projects'
-              // hashSpy={true}
-              smooth={easeAnimation}
-              duration={1200}
-            >
+            <CustomLink id='projects' duration={1200}>
               Projects
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link
-              href='#contact'
-              to='contact'
-              // hashSpy={true}
-              smooth={easeAnimation}
-              duration={1800}
-              offset={-200}
-            >
+            <CustomLink id='contact' duration={1800} offset={-200}>
               Contact
-            </Link>
+            </CustomLink>
           </li>
         </ul>
       </nav>

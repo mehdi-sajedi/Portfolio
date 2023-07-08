@@ -1,16 +1,9 @@
 import styles from './Hero.module.scss';
-import { useEffect } from 'react';
-import { Link, Events } from 'react-scroll';
+import CustomLink from './utilities/CustomLink';
 import { motion } from 'framer-motion';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
 const Hero = () => {
-  useEffect(() => {
-    Events.scrollEvent.register('end', (_to, element) => {
-      element?.focus();
-    });
-  }, []);
-
   return (
     <section className={styles.heroContainer}>
       <div className={styles.hero}>
@@ -35,17 +28,11 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-      <Link
-        to='about'
-        href='#about'
-        smooth='easeInOutCubic'
-        duration={1000}
-        className={styles.scrollToBottom}
-      >
+      <CustomLink id='about' duration={1000} className={styles.scrollToBottom}>
         <i>
           <MdKeyboardDoubleArrowDown />
         </i>
-      </Link>
+      </CustomLink>
     </section>
   );
 };
