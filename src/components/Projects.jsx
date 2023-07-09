@@ -19,7 +19,7 @@ const Projects = () => {
       <div className={styles.headingContainer}>
         <motion.div
           className={styles.heading}
-          initial={{ y: 25, opacity: 0 }}
+          initial={{ y: 0, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
           viewport={{ margin: '-125px', once: true }}

@@ -37,7 +37,7 @@ const About = () => {
     <section id='about' className={styles.aboutContainer} tabIndex={-1}>
       <motion.div
         className={styles.about}
-        initial={{ y: 50, opacity: 0 }}
+        initial={{ y: 0, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
         viewport={{ margin: '-100px', once: true }}

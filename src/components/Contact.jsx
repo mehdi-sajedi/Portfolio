@@ -9,7 +9,7 @@ const Contact = () => {
     <section id='contact' className={styles.contactContainer} tabIndex={-1}>
       <motion.div
         className={styles.contact}
-        initial={{ y: 35, opacity: 0 }}
+        initial={{ y: 0, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
         viewport={{ margin: '-100px', once: true }}
