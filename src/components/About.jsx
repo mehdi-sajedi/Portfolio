@@ -39,8 +39,8 @@ const About = () => {
         className={styles.about}
         initial={{ y: 0, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-        viewport={{ margin: '-100px', once: true }}
+        transition={{ duration: 0.6, ease: [0.78, 0.22, 0.5, 0.96] }}
+        viewport={{ margin: '-80px', once: true }}
       >
         <div>
           <h2 className={styles.heading}>About Me</h2>

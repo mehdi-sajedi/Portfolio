@@ -8,7 +8,7 @@ const CustomLink = ({ id, duration, offset, className, children }) => {
     <Link
       to={id}
       href={`#${id}`}
-      smooth='easeInOutCubic'
+      smooth='easeInOutQuad'
       duration={prefersReducedMotion ? 0 : duration}
       className={className}
       offset={offset}

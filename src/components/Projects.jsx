@@ -21,8 +21,8 @@ const Projects = () => {
           className={styles.heading}
           initial={{ y: 0, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-          viewport={{ margin: '-125px', once: true }}
+          transition={{ duration: 0.6, ease: [0.78, 0.22, 0.5, 0.96] }}
+          viewport={{ margin: '-100px', once: true }}
         >
           <h2 className={styles.title}>Projects</h2>
           <h3 className={styles.text}>

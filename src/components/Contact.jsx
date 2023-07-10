@@ -11,8 +11,8 @@ const Contact = () => {
         className={styles.contact}
         initial={{ y: 0, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-        viewport={{ margin: '-100px', once: true }}
+        transition={{ duration: 0.6, ease: [0.78, 0.22, 0.5, 0.96] }}
+        viewport={{ margin: '-80px', once: true }}
       >
         <h2 className={styles.heading}>Get In Touch</h2>
         <p className={styles.text}>
@@ -22,7 +22,7 @@ const Contact = () => {
           Say Hello
         </a>
       </motion.div>
-      <CustomLink id='header' duration={1800} className={styles.scrollToTop}>
+      <CustomLink id='header' duration={1400} className={styles.scrollToTop}>
         <i>
           <BiUpArrowAlt />
         </i>

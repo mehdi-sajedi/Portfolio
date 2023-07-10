@@ -15,12 +15,12 @@ const Header = () => {
             </CustomLink>
           </li>
           <li>
-            <CustomLink id='projects' duration={1200}>
+            <CustomLink id='projects' duration={1100}>
               Projects
             </CustomLink>
           </li>
           <li>
-            <CustomLink id='contact' duration={1800} offset={-200}>
+            <CustomLink id='contact' duration={1400} offset={-200}>
               Contact
             </CustomLink>
           </li>

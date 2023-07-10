@@ -27,8 +27,8 @@ const Project = ({
         className={styles.project}
         initial={{ x: 0, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.75, ease: [0.78, 0.22, 0.5, 0.96] }}
-        viewport={{ margin: '-88px', once: true }}
+        transition={{ duration: 0.6, ease: [0.78, 0.22, 0.5, 0.96] }}
+        viewport={{ margin: '-75px', once: true }}
       >
         {screenSizes.map(([imagePath, screen]) => {
           return (
