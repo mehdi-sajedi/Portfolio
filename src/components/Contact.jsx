@@ -23,7 +23,7 @@ const Contact = () => {
         </a>
       </motion.div>
       <CustomLink id='header' duration={1400} className={styles.scrollToTop}>
-        <i>
+        <i aria-label='Scroll up arrow'>
           <BiUpArrowAlt />
         </i>
       </CustomLink>

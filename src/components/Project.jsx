@@ -40,7 +40,7 @@ const Project = ({
                 demoImageType === screen ? styles.active : ''
               } `}
             >
-              <img src={imagePath} alt='Project demo' />
+              <img src={imagePath} alt={`${screen} view of ${name} project`} />
             </a>
           );
         })}
@@ -58,10 +58,14 @@ const Project = ({
           </ul>
           <p className={styles.description}>{desc}</p>
           <div className={styles.links}>
-            <a href={github} target='_blank'>
+            <a href={github} target='_blank' aria-label={`View ${name} GitHub`}>
               <AiOutlineGithub /> GitHub
             </a>
-            <a href={website} target='_blank'>
+            <a
+              href={website}
+              target='_blank'
+              aria-label={`View ${name} website`}
+            >
               <HiOutlineExternalLink /> View site
             </a>
           </div>

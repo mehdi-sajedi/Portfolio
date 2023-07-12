@@ -4,7 +4,7 @@ import CustomLink from './utilities/CustomLink';
 const Header = () => {
   return (
     <header className={styles.header} id='header' tabIndex={-1}>
-      <a href='' className={styles.logoLink}>
+      <a href='' className={styles.logoLink} aria-label='Mehdi Sajedi logo'>
         <img src='./logo.svg' />
       </a>
       <nav>
