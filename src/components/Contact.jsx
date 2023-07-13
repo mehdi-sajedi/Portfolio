@@ -18,11 +18,15 @@ const Contact = () => {
         <p className={styles.text}>
           Feel free to reach out or ask any questions!
         </p>
-        <a className={styles.mail} href='mailto:mehdiisajedi@gmail.com'>
+        <a
+          className={styles.mail}
+          href='mailto:mehdiisajedi@gmail.com'
+          aria-label='Send email to Mehdi Sajedi'
+        >
           Say Hello
         </a>
       </motion.div>
-      <CustomLink id='header' duration={1400} className={styles.scrollToTop}>
+      <CustomLink id='header' duration={1300} className={styles.scrollToTop}>
         <i aria-label='Scroll up arrow'>
           <BiUpArrowAlt />
         </i>

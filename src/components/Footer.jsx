@@ -29,7 +29,7 @@ const Footer = () => {
         <li>
           <a
             href='mailto:mehdiisajedi@gmail.com'
-            aria-label='Mehdi Sajedi email'
+            aria-label='Send email to Mehdi Sajedi'
           >
             <LuMail />
           </a>

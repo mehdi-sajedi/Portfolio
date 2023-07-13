@@ -28,7 +28,7 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-      <CustomLink id='about' duration={1000} className={styles.scrollToBottom}>
+      <CustomLink id='about' duration={800} className={styles.scrollToBottom}>
         <i aria-label='Scroll down arrow'>
           <MdKeyboardDoubleArrowDown />
         </i>

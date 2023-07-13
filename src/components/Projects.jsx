@@ -9,8 +9,7 @@ const sizes = ['desktop', 'tablet', 'phone'];
 const Projects = () => {
   const [demoImageType, setDemoImageType] = useState('desktop');
 
-  const onClick = (e) => {
-    console.log(e.target.dataset.size);
+  const updateSizeSelection = (e) => {
     setDemoImageType(e.target.dataset.size);
   };
 
@@ -34,8 +33,11 @@ const Projects = () => {
                 <li key={`demo-${s}`}>
                   <button
                     data-size={s}
-                    onClick={onClick}
+                    onClick={updateSizeSelection}
                     className={demoImageType === s ? styles.active : ''}
+                    aria-label={`Change projects preview image to ${s} view. ${
+                      demoImageType === s ? 'Currently active' : ''
+                    } `}
                   >
                     {s}
                   </button>

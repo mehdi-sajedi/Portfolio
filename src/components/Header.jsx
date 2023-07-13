@@ -10,17 +10,17 @@ const Header = () => {
       <nav>
         <ul className={styles.links}>
           <li>
-            <CustomLink id='about' duration={1000}>
+            <CustomLink id='about' duration={800}>
               About
             </CustomLink>
           </li>
           <li>
-            <CustomLink id='projects' duration={1100}>
+            <CustomLink id='projects' duration={900}>
               Projects
             </CustomLink>
           </li>
           <li>
-            <CustomLink id='contact' duration={1400} offset={-200}>
+            <CustomLink id='contact' duration={1300} offset={-200}>
               Contact
             </CustomLink>
           </li>
