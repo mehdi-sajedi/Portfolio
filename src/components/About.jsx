@@ -8,18 +8,18 @@ import { SiExpress, SiHtml5, SiCss3 } from 'react-icons/si';
 import { DiMongodb, DiSass } from 'react-icons/di';
 
 const skills = [
+  ['HTML', <SiHtml5 />],
+  ['CSS', <SiCss3 />],
   ['JavaScript', <BiLogoJavascript />],
-  ['TypeScript', <BiLogoTypescript />],
   ['React', <BiLogoReact />],
-  ['Redux', <BiLogoRedux />],
+  ['SCSS', <DiSass />],
+  ['TypeScript', <BiLogoTypescript />],
   ['Node.js', <BiLogoNodejs />],
   ['Express', <SiExpress />],
   ['MongoDB', <DiMongodb />],
-  ['HTML', <SiHtml5 />],
-  ['CSS', <SiCss3 />],
-  ['SCSS', <DiSass />],
-  ['Git', <BiLogoGit />],
+  ['Redux', <BiLogoRedux />],
   ['Firebase', <BiLogoFirebase />],
+  ['Git', <BiLogoGit />],
 ];
 
 const About = () => {
