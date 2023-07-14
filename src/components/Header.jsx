@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header} id='header' tabIndex={-1}>
       <a href='' className={styles.logoLink} aria-label='Mehdi Sajedi logo'>
-        <img src='./logo.svg' />
+        <img src='./logo.svg' alt='Mehdi Sajedi logo' />
       </a>
       <nav>
         <ul className={styles.links}>

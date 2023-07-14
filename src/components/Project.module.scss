@@ -176,9 +176,11 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
             border-radius: 100px;
             transition: transform 340ms ease-in-out, opacity 340ms ease-in-out;
             opacity: 0.5;
+            transform-origin: right;
           }
 
           &:hover::after {
+            transform-origin: left;
             transform: scaleX(1);
             opacity: 1;
           }
