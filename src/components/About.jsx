@@ -45,20 +45,18 @@ const About = () => {
         <div>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.bio}>
-            My programming journey began during my time at San Diego State
-            University when I took an introductory coding course. I enjoyed the
-            logical problem solving that coding offered and I was intrigued to
-            explore the various paths within the software engineering field. As
-            a detail-oriented individual with a strong inclination for visual
-            learning, web development naturally appealed to me. The blend of
-            traditional programming alongside the creativity offered through
-            frontend design made it a great fit for me! I dedicated myself to
-            self-learning web development by reading online resources, following
-            tutorials, and building projects. This self-driven approach has
-            allowed me to continuously expand my skills and stay up-to-date with
-            the ever-evolving web development landscape. I eagerly look forward
-            to taking on new challenges and learning new things on this exciting
-            career path!
+            Hello! My name’s Mehdi and my programming journey began when I
+            took my first coding course at San Diego State University. As a
+            detail-oriented individual with a strong inclination for visual
+            learning, I had a natural liking towards web development. The
+            combination of traditional programming alongside the creative
+            opportunities offered through frontend design made it a great fit
+            for me. I dedicated myself to self-learning web development by
+            reading online resources, following tutorials, and building
+            projects. This self-driven approach has allowed me to continuously
+            expand my skills and stay up-to-date with the ever-evolving web
+            development landscape. I eagerly look forward to taking on new
+            challenges and learning new things on this exciting career path!
           </p>
         </div>
         <div className={styles.devSkills}>

@@ -46,10 +46,8 @@ const Project = ({
         })}
         <div className={styles.info}>
           <h4 className={styles.name}>
-            <a href={website} target='_blank'>
-              {idx + 1}. {''}
-              {name}
-            </a>
+            {idx + 1}. {''}
+            {name}
           </h4>
           <ul className={styles.tech}>
             {tech.map((item) => (

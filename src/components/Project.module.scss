@@ -127,6 +127,14 @@ $project-colors: $project1, $project2, $project3, $project4, $project5,
           font-size: 40px;
         }
 
+        @include media('<880px') {
+          font-size: 34px;
+        }
+
+        @include media('<tablet') {
+          font-size: 40px;
+        }
+
         @include media('<phone') {
           font-size: 33px;
           letter-spacing: -1px;

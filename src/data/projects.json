@@ -56,7 +56,7 @@
     "coverPhone": "./assets/dicegame/dicegame-phone.png",
     "github": "https://github.com/mehdi-sajedi/dice-game",
     "website": "https://dice-game-v2.netlify.app",
-    "tech": ["React"],
+    "tech": ["React", "CSS"],
     "desc": "Interactive multiplayer dice game built with React."
   }
 ]
