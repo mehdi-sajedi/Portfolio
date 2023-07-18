@@ -45,8 +45,8 @@ const About = () => {
         <div>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.bio}>
-            Hello! My name’s Mehdi and my programming journey began when I
-            took my first coding course at San Diego State University. As a
+            Hello! My name’s Mehdi and my programming journey began when I took
+            my first coding course at San Diego State University. As a
             detail-oriented individual with a strong inclination for visual
             learning, I had a natural liking towards web development. The
             combination of traditional programming alongside the creative
@@ -78,6 +78,8 @@ const About = () => {
           </ul>
         </div>
       </motion.div>
+      <div className={`${styles.wave} ${styles.wave1}`}></div>
+      <div className={`${styles.wave} ${styles.wave2}`}></div>
     </section>
   );
 };

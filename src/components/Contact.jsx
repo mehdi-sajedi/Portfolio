@@ -1,7 +1,6 @@
 import styles from './Contact.module.scss';
 import { motion } from 'framer-motion';
 import { BiUpArrowAlt } from 'react-icons/bi';
-import Wave from './utilities/Wave';
 import CustomLink from './utilities/CustomLink';
 
 const Contact = () => {
@@ -31,7 +30,7 @@ const Contact = () => {
           <BiUpArrowAlt />
         </i>
       </CustomLink>
-      <Wave />
+      <div className={styles.wave}></div>
     </section>
   );
 };
