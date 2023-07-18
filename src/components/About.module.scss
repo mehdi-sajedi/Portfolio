@@ -143,6 +143,13 @@ $breakpoint: '<950px';
             }
           }
 
+          &.active:nth-child(5) button {
+            color: var(--white);
+          }
+          &.active:nth-child(12) button {
+            color: var(--white);
+          }
+
           &.active button::after {
             transform: scaleX(1);
             transform-origin: left;
