@@ -78,8 +78,6 @@ const About = () => {
           </ul>
         </div>
       </motion.div>
-      <div className={`${styles.wave} ${styles.wave1}`}></div>
-      <div className={`${styles.wave} ${styles.wave2}`}></div>
     </section>
   );
 };
