@@ -3,7 +3,8 @@
 .contactContainer {
   @include set-bg-and-text-colors(whitesmoke);
   position: relative;
-  padding-top: 100px;
+  padding-top: 85px;
+  padding-bottom: 15px;
   border: none;
   outline: none;
 
