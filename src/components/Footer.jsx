@@ -19,7 +19,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href='https://linkedin.com/mehdisajedi'
+            href='https://linkedin.com/in/mehdisajedi'
             target='_blank'
             aria-label='Mehdi Sajedi LinkedIn'
           >
